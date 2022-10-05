@@ -11,10 +11,10 @@ function Categories() {
   console.log(products)
   return (
     <div>
-      <div>
+      <div className="row">
         <h2>Products</h2>
         {products.map((prod)=>{
-          return(<Product prod={prod} />)
+          return(<Product prod={prod} key={prod.id} />)
         })
           }
       </div>
