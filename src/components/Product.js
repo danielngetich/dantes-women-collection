@@ -1,29 +1,26 @@
 import Categories from "./Categories";
 import "bootstrap/dist/css/bootstrap.min.css";
-function Product() {
+function Product({prod}) {
+console.log(prod)
   return (
-    <div>
       <div className="card mb-3" >
         <div className="row g-0">
           <div className="col-md-4">
-            <img src="https://ke.jumia.is/cms/2022/JA22/Teasing/Freelinks/WomensFashion/Jewelry.png" className="img-fluid rounded-start" alt="..." />
+            <img src={prod.image} className="img-fluid rounded-start" alt="..." />
           </div>
           <div className="col-md-8">
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">{prod.title}</h5>
               <p className="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                US${prod.price}
               </p>
               <p className="card-text">
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Sku {prod.sku}</small>
               </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
   );
 }
 export default Product;
