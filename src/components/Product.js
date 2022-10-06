@@ -1,6 +1,6 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-function Product({ prod }) {
+function Product({ prod,addToCart ,product}) {
   console.log(prod);
   return (
     <div className="col-sm-4 h-50">
@@ -10,7 +10,7 @@ function Product({ prod }) {
           <h4 className="card-title">{prod.title}</h4>
           <h5 className="card-title">Available size {prod.availableSizes}</h5>
           <p className="card-text">US$ {prod.price}</p>
-          <button  className="btn btn-primary">
+          <button  className="btn btn-primary" onClick={()=>addToCart(product)}>
             Add to Cart
           </button>
         </div>
