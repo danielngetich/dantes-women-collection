@@ -9,7 +9,7 @@ function App() {
 const [cart,setCart]=useState([])
 function handleClick(prod){
 cart.push(prod)
-return(<Cart cart={cart}/>)
+
 }
   return (
     <div className="App">
@@ -18,7 +18,7 @@ return(<Cart cart={cart}/>)
         <Routes>
           <Route path="/" element={<Categories handleClick={handleClick} />} />
           <Route path="/sell" element={<AddCollection />} />
-          <Route path="/cart" element={<Cart/>} />
+          <Route path="/cart" element={cart.map((item)=>{<Cart item={item}/>})} />
         </Routes>
       </Router>
     </div>

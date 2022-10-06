@@ -1,7 +1,7 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 function Cart({cart}) {
-console.log(cart)
+  console.log(cart)
   return (
     <div>
     {/* <table className="table">
