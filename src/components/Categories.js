@@ -1,12 +1,8 @@
 import { useEffect, useState } from "react";
 import Product from "./Product";
-import Cart from "./Cart";
-function Categories() {
+function Categories({handleClick}) {
   const [products, setProducts] = useState([]);
 
-function handleClick(prod){
-return(<Cart prod={prod} />)
-}
   useEffect(() => {
     fetch("http://localhost:3000/products")
       .then((res) => res.json())
