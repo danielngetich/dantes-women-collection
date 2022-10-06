@@ -49,7 +49,7 @@ function AddCollection() {
                         value={PName}
                         onChange={(e)=>setPName(e.target.value)}
                       />
-                      <label className="form-label" for="form3Example1q">
+                      <label className="form-label" htmlFor="form3Example1q">
                         Product Name
                       </label>
                     </div>
@@ -61,7 +61,7 @@ function AddCollection() {
                         value={pImage}
                         onChange={(e)=>setPImage(e.target.value)}
                       />
-                      <label className="form-label" for="form3Example1q">
+                      <label className="form-label" htmlFor="form3Example1q">
                       Product Image url
                       </label>
                     </div>
@@ -73,7 +73,7 @@ function AddCollection() {
                         value={pPrice}
                         onChange={(e)=>setPPrice(e.target.value)}
                       />
-                      <label className="form-label" for="form3Example1q">
+                      <label className="form-label" htmlFor="form3Example1q">
                       Product  Price
                       </label>
                     </div>
@@ -85,7 +85,7 @@ function AddCollection() {
                         value={availsizes}
                         onChange={(e)=>setAvailsizes(e.target.value)}
                       />
-                      <label className="form-label" for="form3Example1q">
+                      <label className="form-label" htmlFor="form3Example1q">
                       AvailableSizes
                       </label>
                     </div>

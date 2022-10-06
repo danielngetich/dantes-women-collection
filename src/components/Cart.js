@@ -1,9 +1,10 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 function Cart({cart}) {
+console.log(cart)
   return (
     <div>
-    <table className="table">
+    {/* <table className="table">
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -20,7 +21,7 @@ function Cart({cart}) {
         <td>{cart.price}</td>
       </tr>
     </tbody>
-  </table>
+  </table> */}
   </div>
   );
 }
