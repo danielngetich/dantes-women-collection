@@ -23,6 +23,10 @@ function AddCollection() {
     })
     .then(res=>res.json())
     .then((data)=>console.log(data))
+    setPName("");
+    setPImage("");
+    setPPrice("");
+    setAvailsizes("")
   }
   return (
     <div>

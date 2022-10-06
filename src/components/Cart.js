@@ -1,6 +1,7 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-function Cart(cart) {
+function Cart({prod}) {
+  console.log(prod)
   return (
     <div>
     <table className="table">
@@ -14,10 +15,10 @@ function Cart(cart) {
     </thead>
     <tbody>
       <tr>
-        <th scope="row">{cart.id}</th>
-        <td>{cart.image}</td>
+        <th scope="row">1</th>
+        {/* <td>{cart.image}</td>
         <td>{cart.title}</td>
-        <td>{cart.price}</td>
+        <td>{cart.price}</td> */}
       </tr>
     </tbody>
   </table>

@@ -4,6 +4,9 @@ import Cart from "./Cart";
 function Categories() {
   const [products, setProducts] = useState([]);
 
+function handleClick(prod){
+return(<Cart prod={prod} />)
+}
   useEffect(() => {
     fetch("http://localhost:3000/products")
       .then((res) => res.json())
@@ -15,7 +18,7 @@ function Categories() {
         <div className="row ">
           <h3>Our Products</h3>
           {products.map((prod) => {
-            return <Product prod={prod} key={prod.id} />;
+            return <Product prod={prod} key={prod.id} handleClick={handleClick} />;
           })}
         </div>
       </div>

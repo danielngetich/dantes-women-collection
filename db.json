@@ -71,6 +71,13 @@
       "availableSizes": "xml",
       "price": "ksh 1200",
       "id": 10
+    },
+    {
+      "image": "https://pictures-kenya.jijistatic.com/26248811_MTI4MC0xMTExLTQzMTk4MDZmYjk.webp",
+      "title": "Ladies Outfit",
+      "availableSizes": "All Sizes",
+      "price": "70",
+      "id": 11
     }
   ]
 }
