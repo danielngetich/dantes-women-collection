@@ -6,9 +6,9 @@ import AddCollection from "./components/AddCollection";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cart from "./components/Cart";
 function App() {
-const [cart,setCart]=useState([])
+const cart=[];
 function handleClick(prod){
-cart.push(prod)
+  cart.push(prod)
 
 }
   return (
@@ -18,7 +18,7 @@ cart.push(prod)
         <Routes>
           <Route path="/" element={<Categories handleClick={handleClick} />} />
           <Route path="/sell" element={<AddCollection />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/cart" element={<Cart cart={cart}/>} />
         </Routes>
       </Router>
     </div>
