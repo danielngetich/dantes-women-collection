@@ -9,7 +9,7 @@ function Categories() {
       .then((res) => res.json())
       .then((product) => setProducts(product));
   }, []);
-  console.log(products);
+
 
   function addToCart(product) {
     console.log("tuko ndani");
