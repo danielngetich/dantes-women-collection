@@ -5,7 +5,7 @@
             "sku": 18644119330491312,
             "image":"https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/49/890243/1.jpg?5383",
             "title": "Dress",
-            "availableSizes": ["X", "L", "XL", "XXL"],
+            "availableSizes":  "XXL",
             "price": 10         
          },
       
@@ -14,23 +14,25 @@
             "sku": 11854078013954528,
             "image":"https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/68/601243/1.jpg?6340",
             "title": "Dress",
-            "availableSizes": ["X", "M", "L"],
-            "price": 14.9          },
+            "availableSizes":  "L",
+            "price": 14.9         
+           },
       
           {
             "id": 3,
             "sku": 876661122392077,
             "image":"https://ke.jumia.is/cms/2022/JA22/Teasing/Freelinks/WomensFashion/Lingerie.jpg",
             "title": "Lingerie",
-            "availableSizes": ["X", "M", "L"],
-            "price": 14.9          },
+            "availableSizes":  "M", 
+            "price": 14.9      
+            },
       
           {
             "id": 4,
             "sku": 9197907543445677,
             "image":"https://ke.jumia.is/cms/2022/JA22/Teasing/Freelinks/WomensFashion/Jumpsuits.png",
             "title": "Jumpsuits",
-            "availableSizes": ["XL"],
+            "availableSizes": "XL",
             "price": 25.9
           },
       
@@ -39,7 +41,7 @@
             "sku": 10547961582846888,
             "image":"https://ke.jumia.is/cms/2022/JA22/Teasing/Freelinks/WomensFashion/Midlow-Heels.png",
             "title": "Midlow-Heels",
-            "availableSizes": ["X", "L", "XL"],
+            "availableSizes":  "L", 
             "price": 10.9
           },
       
@@ -48,7 +50,7 @@
             "sku": 6090484789343891,
             "image":"https://ke.jumia.is/cms/2022/JA22/Teasing/Freelinks/WomensFashion/Sandals.png",
             "title": "Man Tie Dye Cinza Grey T-Shirt",
-            "availableSizes": ["XL", "XXL"],
+            "availableSizes": "XL", 
             "price": 49.9
           },
       
@@ -57,7 +59,7 @@
             "sku": 18532669286405342,
             "image":"https://ke.jumia.is/cms/2022/JA22/Teasing/Freelinks/WomensFashion/Swimsuit.jpg",
             "title": "Swimsuit",
-            "availableSizes": ["S"],
+            "availableSizes": "S",
             "style": "Preto com listras brancas",
             "price": 22.5
           },
@@ -67,7 +69,7 @@
             "sku": 5619496040738316,
             "image":"https://ke.jumia.is/cms/2022/JA22/Teasing/Freelinks/WomensFashion/Watches.png",
             "title": "Watches",
-            "availableSizes": ["XL"],
+            "availableSizes": "XL",
             "style": "Azul escuro",
             "price": 18.7
           },
@@ -76,7 +78,7 @@
             "sku": 11600983276356165,
             "image":"https://ke.jumia.is/cms/2022/JA22/Teasing/Freelinks/WomensFashion/Jewelry.png",
             "title": "Jewelry",
-            "availableSizes": ["L", "XL"],
+            "availableSizes":  "XL",
             "price": 134.9
           }
     ]

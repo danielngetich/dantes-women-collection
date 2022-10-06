@@ -1,4 +1,4 @@
-
+import Cart from "./Cart";
 function NavBar() {
   return (
     <nav className="navbar bg-dark text-white">
@@ -16,12 +16,12 @@ function NavBar() {
         </div>
         <div>
           <span>
-            <a href="/customers">Rate Us</a>
+            <a href="/">Add Collection</a>
           </span>
         </div>
         <div>
           <span>
-            <a href="#Categories">Products</a>
+            <a href="#Categories"><Cart/></a>
           </span>
         </div>
       </div>

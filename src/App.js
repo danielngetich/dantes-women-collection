@@ -2,7 +2,6 @@ import NavBar from './components/NavBar';
 import './App.css';
 import Categories from "./components/Categories";
 import Product from "./components/Product";
-import CustomersComments from "./components/CustomersComments"
 
 function App() {
   return (

@@ -10,9 +10,9 @@ function Categories() {
   }, []);
   console.log(products)
   return (
-    <div>
-      <div className="row">
-        <h2>Products</h2>
+    <div className="container-fluid">
+      <div className="row ">
+        <h3>Our Products</h3>
         {products.map((prod)=>{
           return(<Product prod={prod} key={prod.id} />)
         })
