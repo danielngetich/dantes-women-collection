@@ -1,15 +1,21 @@
-import React from 'react';
-import NavBar from './components/NavBar';
-import './App.css';
+import React from "react";
+import NavBar from "./components/NavBar";
+import "./App.css";
 import Categories from "./components/Categories";
-import AddCollection from './components/AddCollection';
-
+import AddCollection from "./components/AddCollection";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Cart from "./components/Cart";
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <Categories/>
-      <AddCollection/>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Categories />} />
+          <Route path="/sell" element={<AddCollection />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

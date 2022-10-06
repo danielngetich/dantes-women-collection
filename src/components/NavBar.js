@@ -1,12 +1,13 @@
 import React from 'react';
 import Cart from "./Cart";
+import { NavLink } from 'react-router-dom';
 function NavBar() {
   return (
     <nav className="navbar bg-dark text-white">
       <div className="container-fluid">
         <div>
           <span>
-            <a className="text-decoration-none" href="/">Dante's Collection</a>
+            <NavLink to='/' className="text-decoration-none" >Dante's Collection</NavLink>
           </span>
         </div>
         <div>
@@ -17,12 +18,12 @@ function NavBar() {
         </div>
         <div>
           <span>
-            <a className="text-decoration-none" href="/">SELL</a>
+          <NavLink to='/sell' className="text-decoration-none" >SELL</NavLink>
           </span>
         </div>
         <div>
           <span>
-            <a className="text-decoration-none" href="/"><Cart/></a>
+          <NavLink to='/cart' className="text-decoration-none" >Cart</NavLink>
           </span>
         </div>
       </div>
