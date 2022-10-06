@@ -14,11 +14,11 @@ cart.push(prod)
   return (
     <div className="App">
       <Router>
-        <NavBar />
+        <NavBar  />
         <Routes>
           <Route path="/" element={<Categories handleClick={handleClick} />} />
           <Route path="/sell" element={<AddCollection />} />
-          <Route path="/cart" element={cart.map((item)=>{<Cart item={item}/>})} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </Router>
     </div>

@@ -14,7 +14,7 @@ function AddCollection() {
   }
   function handleSubmit(e){
     e.preventDefault();
-    fetch("http://localhost:3000/products",{
+    fetch("https://dantes-women-app.herokuapp.com/products",{
       method:"POST",
       headers:{
         "Content-Type": "application/json"

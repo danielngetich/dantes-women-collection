@@ -4,7 +4,7 @@ function Categories({handleClick}) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/products")
+    fetch("https://dantes-women-app.herokuapp.com/products")
       .then((res) => res.json())
       .then((product) => setProducts(product));
   }, []);
