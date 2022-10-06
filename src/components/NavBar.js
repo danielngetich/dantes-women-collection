@@ -1,3 +1,4 @@
+import React from 'react';
 import Cart from "./Cart";
 function NavBar() {
   return (
@@ -5,7 +6,7 @@ function NavBar() {
       <div className="container-fluid">
         <div>
           <span>
-            <a href="/">Dante's Collection</a>
+            <a className="text-decoration-none" href="/">Dante's Collection</a>
           </span>
         </div>
         <div>
@@ -16,12 +17,12 @@ function NavBar() {
         </div>
         <div>
           <span>
-            <a href="/">Add Collection</a>
+            <a className="text-decoration-none" href="/">SELL</a>
           </span>
         </div>
         <div>
           <span>
-            <a href="#Categories"><Cart/></a>
+            <a className="text-decoration-none" href="/"><Cart/></a>
           </span>
         </div>
       </div>

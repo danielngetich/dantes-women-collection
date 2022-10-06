@@ -9,6 +9,7 @@ function Categories() {
       .then((product) => setProducts(product));
   }, []);
   console.log(products)
+  
   return (
     <div className="container-fluid">
       <div className="row ">

@@ -1,13 +1,15 @@
+import React from 'react';
 import NavBar from './components/NavBar';
 import './App.css';
 import Categories from "./components/Categories";
-import Product from "./components/Product";
+import AddCollection from './components/AddCollection';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
       <Categories/>
+      <AddCollection/>
     </div>
   );
 }

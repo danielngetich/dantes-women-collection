@@ -1,4 +1,4 @@
-import Categories from "./Categories";
+import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 function Product({ prod }) {
   console.log(prod);
@@ -8,11 +8,11 @@ function Product({ prod }) {
         <img src={prod.image} className="card-img-top" alt="products" />
         <div className="card-body">
           <h4 className="card-title">{prod.title}</h4>
-          <h5 className="card-title">{prod.availableSizes}</h5>
+          <h5 className="card-title">Available size {prod.availableSizes}</h5>
           <p className="card-text">US$ {prod.price}</p>
-          <a href="#" className="btn btn-primary">
+          <button  className="btn btn-primary">
             Add to Cart
-          </a>
+          </button>
         </div>
       </div>
       </div>
