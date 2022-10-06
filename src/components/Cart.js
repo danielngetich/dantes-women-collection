@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 function Cart(cart) {
-
   return (
+    <div>
     <table className="table">
     <thead>
       <tr>
@@ -14,13 +14,14 @@ function Cart(cart) {
     </thead>
     <tbody>
       <tr>
-        <th scope="row">1</th>
+        <th scope="row">{cart.id}</th>
         <td>{cart.image}</td>
         <td>{cart.title}</td>
         <td>{cart.price}</td>
       </tr>
     </tbody>
   </table>
+  </div>
   );
 }
 export default Cart;

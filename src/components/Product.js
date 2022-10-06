@@ -1,7 +1,13 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-function Product({ prod,addToCart ,product}) {
-  console.log(prod);
+import Cart from './Cart';
+function Product({ prod}) {
+  const [cart, setCart] = useState([]);
+  function addToCart(product){
+    console.log("i am cliked")
+    setCart([...cart,product])
+    return(<Cart cart={cart}/>)
+  }
   return (
     <div className="col-sm-4 h-50">
       <div className="card " style={{ width: "18rem" }}>
@@ -10,7 +16,7 @@ function Product({ prod,addToCart ,product}) {
           <h4 className="card-title">{prod.title}</h4>
           <h5 className="card-title">Available size {prod.availableSizes}</h5>
           <p className="card-text">US$ {prod.price}</p>
-          <button  className="btn btn-primary" onClick={()=>addToCart(product)}>
+          <button  className="btn btn-primary" onClick={addToCart}>
             Add to Cart
           </button>
         </div>
